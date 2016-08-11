@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PokemonGo.RocketAPI", "Poke
 EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "PokemonGo.RocketAPI.NetCore", "PokemonGo.RocketAPI.NetCore\PokemonGo.RocketAPI.NetCore.xproj", "{9FE9D533-D451-4A27-B6E2-0544CF9F6630}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PokemonGo.RocketAPI.Nuget", "PokemonGo.RocketAPI.Nuget\PokemonGo.RocketAPI.Nuget.csproj", "{0451BAEF-DF2E-4B98-8644-94EE9415E389}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,9 @@ Global
 		{9FE9D533-D451-4A27-B6E2-0544CF9F6630}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9FE9D533-D451-4A27-B6E2-0544CF9F6630}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9FE9D533-D451-4A27-B6E2-0544CF9F6630}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0451BAEF-DF2E-4B98-8644-94EE9415E389}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0451BAEF-DF2E-4B98-8644-94EE9415E389}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0451BAEF-DF2E-4B98-8644-94EE9415E389}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
