@@ -8,6 +8,26 @@ Donate some bitcoin beers via: 1KRBmNN8y9hwaXGR7rCoJWmzJHfBp2ybRb
 
 ----------
 ### Usage Example
+```
+            var setting = new SimplePogoSetting()
+            {
+                AuthType = AuthType.Google,
+                GoogleUsername = "********@gmail.com",
+                GooglePassword = "*******"
+            };
+            var pogo = new PokemonGo.RocketAPI.Client(setting, new SimpleApiFailureStrategy());
+            Task.WaitAll(pogo.Login.DoLogin());
+
+            Console.WriteLine(pogo.Player.GetPlayer().Result.PlayerData.Username);
+            var inventory = pogo.Inventory.GetInventory().Result;
+            var list = inventory.InventoryDelta.InventoryItems
+                .Select(i => i.InventoryItemData?.Item)
+                .Where(p => p != null);
+            foreach (var itemData in list)
+            {
+                Console.WriteLine(itemData.ItemId + "   " + itemData.Count);
+            }
+```
 
 ```
 var client = new Client(new Settings()); //Define your own ISettings implementation
