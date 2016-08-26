@@ -1,1 +1,1 @@
-# Pokémon Go Client API
+# PokemonGo.RocketAPI.NetCore
